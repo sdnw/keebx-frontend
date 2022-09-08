@@ -6,6 +6,8 @@ import MainPage from "./MainPage";
 import Cart from "./Cart";
 import Header from "./Header";
 import ListingDetails from "./ListingDetails";
+import Likes from "./Likes";
+import ListingsForm from "./ListingsForm";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -91,6 +93,9 @@ function App() {
             ) : (
               <PageLogin setCurrentUser={setCurrentUser} />
             )}
+          </Route>
+          <Route exact path="/listings/new">
+            <ListingsForm component={ListingsForm} handleAddListing={handleAddListing}/>
           </Route>
           <Route exact path="/cart">
             <Cart
