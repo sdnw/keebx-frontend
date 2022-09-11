@@ -13,7 +13,7 @@ function Header({ searchItems, searchInput, setShow, size, setCurrentUser }) {
       <nav>
         <div className="navbar">
           <NavLink exact className="button" to="/">
-            WeList
+            KeebX
           </NavLink>
           {/* <NavLink exact className="button" to="/listings">
             Shop

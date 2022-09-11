@@ -1,0 +1,63 @@
+.listingFormContainer {
+    background-color: #f9f9fd;
+    min-height: 100vh;
+}
+
+.listingFormView {
+    background-color: white;
+    padding: 50px;
+}
+
+.inputViewForn {
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.inputStyle {
+    border: none;
+    font-size: 16px;
+}
+
+.inputStyle:focus {
+    outline: none;
+}
+
+.loginBtnViewForm {
+    background-color: #3e87f2;
+    border: none;
+    min-width: 20%;
+    max-width: 40%;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.loginBtnViewForm:hover {
+    box-shadow: 1px 1px 5px 1px #3e87f2;
+}
+
+.loginBtnForm {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.textAreaStyle {
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    margin-bottom: 15px;
+    border-radius: 5px;
+    width: 50%;
+    height: 100px;
+    font-size: 16px;
+}
+
+.textAreaStyle:focus {
+    outline: none;
+}
