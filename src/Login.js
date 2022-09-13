@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './login.css'
 import account from './account.svg'
 
-function Login({ setCurrentUser }) {
+function Login({ setCurrentUser, setShowLogin }) {
   const [formData, setFormData] = useState({
     name: "",
     password: "",
@@ -117,6 +117,12 @@ function Login({ setCurrentUser }) {
               <p style={{ margin: 0 }}>Remember Me</p>
             </div>
             <p style={{ margin: 0 }}>Forgot Password</p>
+            <p id="p1">
+                    Don't have an account?
+                    <button
+                        id="b1" onClick={() => setShowLogin(false)}>Sign Up
+                    </button>
+                </p>
           </div>
         </div>
       </div>
