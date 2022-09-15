@@ -4,7 +4,7 @@ function ListingCard({ item, deleteById, handleClick }) {
 
 
   function handleDelete(id) {
-    fetch("http://localhost:6001/listings/" + id, {
+    fetch("http://localhost:3000/items/" + id, {
       method: "DELETE"
     })
     deleteById(id)

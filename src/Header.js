@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 function Header({ searchItems, searchInput, setShow, size, setCurrentUser }) {
   const logout = () => {
-    fetch("/logout", {
+    fetch("http://localhost:3000/logout", {
       method: "DELETE",
     }).then(setCurrentUser(null));
   };
@@ -13,25 +13,25 @@ function Header({ searchItems, searchInput, setShow, size, setCurrentUser }) {
       <nav>
         <div className="navbar">
           <NavLink exact className="button" to="/">
-            KeebX
+            KeebX 
           </NavLink>
           {/* <NavLink exact className="button" to="/listings">
             Shop
           </NavLink> */}
           <NavLink exact className="button" to="/listings/new">
-            Sell
+            Sell 
           </NavLink>
           <NavLink exact className="button" to="/my_items">
-            My Listed Items
+            My Listed Items 
           </NavLink>
           <NavLink exact className="button" to="/cart">
-            Cart: { size }
+            Cart: { size } 
             <span>
               <i class="fas-fa-cart-plus"></i>
             </span>
           </NavLink>
           <NavLink exact className="button" onClick={logout} to="/">
-            Logout
+            Logout 
           </NavLink>
           {/* <div className="cart" onClick={() => setShow(false)}>
           <span>

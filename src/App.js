@@ -19,7 +19,7 @@ function App() {
 
   // on component mount, loads user from stored session if there is one
   useEffect(() => {
-    fetch("/me").then((res) => {
+    fetch("http://localhost:3000/me").then((res) => {
       if (res.ok) {
         res
           .json()
@@ -32,8 +32,8 @@ function App() {
   }, []);
 
   const fetchListings = () => {
-    fetch("/items")
-      .then((res) => res.json())
+    fetch("http://localhost:3000/items")
+      .then(res => res.json())
       .then((data) => {
         console.log(data);
         setListings(data);

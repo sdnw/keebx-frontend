@@ -1,0 +1,1 @@
+// click on an item and it pops up a window with just the item and the background is like darkened idk 
