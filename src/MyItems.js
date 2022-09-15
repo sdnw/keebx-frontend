@@ -18,7 +18,7 @@ const MyItems = ({ deleteById, currentUser }) => {
   );
 
   function _fetchItems() {
-    fetch("/my_items")
+    fetch("http://localhost:3000/my_items")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
